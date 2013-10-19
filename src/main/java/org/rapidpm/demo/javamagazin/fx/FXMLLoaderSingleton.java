@@ -14,7 +14,7 @@
  *    limitations under the License.
  */
 
-package org.rapidpm.demo.javamagazin201403.fx;
+package org.rapidpm.demo.javamagazin.fx;
 
 import java.net.URL;
 import java.util.HashMap;
@@ -25,7 +25,6 @@ import javax.inject.Inject;
 import javax.inject.Singleton;
 
 import javafx.fxml.FXMLLoader;
-import javafx.util.Callback;
 
 /**
  * User: Sven Ruppert
@@ -51,13 +50,10 @@ public class FXMLLoaderSingleton {
             final URL resource = clazz.getResource(fxmlFileName);
             FXMLLoader loader = new FXMLLoader(resource);
             loader.setClassLoader(cachingClassLoader);
-            loader.setControllerFactory(new Callback<Class<?>, Object>() {
-                @Override
-                public Object call(Class<?> param) {
-                    final Class<CDIJavaFxBaseController> p = (Class<CDIJavaFxBaseController>) param;
-                    final CDIJavaFxBaseController controller = instance.select(p).get();
-                    return controller;
-                }
+            loader.setControllerFactory(param -> {
+                final Class<CDIJavaFxBaseController> p = (Class<CDIJavaFxBaseController>) param;
+                final CDIJavaFxBaseController controller = instance.select(p).get();
+                return controller;
             });
             try {
                 final Class<?> aClass = Class.forName(clazz.getName() + "Controller");

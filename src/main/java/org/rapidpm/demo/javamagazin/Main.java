@@ -1,4 +1,4 @@
-package org.rapidpm.demo.javamagazin201403;
+package org.rapidpm.demo.javamagazin;
 
 /**
  * Created by Sven Ruppert on 07.10.13.

@@ -14,7 +14,7 @@
  *    limitations under the License.
  */
 
-package org.rapidpm.demo.javamagazin201403.fx;
+package org.rapidpm.demo.javamagazin.fx;
 
 import java.io.IOException;
 import java.net.URL;

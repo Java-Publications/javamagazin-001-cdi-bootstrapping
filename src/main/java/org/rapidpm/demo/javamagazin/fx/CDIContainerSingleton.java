@@ -14,7 +14,7 @@
  *    limitations under the License.
  */
 
-package org.rapidpm.demo.javamagazin201403.fx;
+package org.rapidpm.demo.javamagazin.fx;
 
 import javax.enterprise.context.spi.CreationalContext;
 import javax.enterprise.event.Event;

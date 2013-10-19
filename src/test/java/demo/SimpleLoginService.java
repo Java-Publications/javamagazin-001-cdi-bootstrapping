@@ -14,14 +14,14 @@
  *    limitations under the License.
  */
 
-package org.rapidpm.demo.javamagazin201403.fx.components;
+package demo;
 
-/**
- * User: Sven Ruppert
- * Date: 30.08.13
- * Time: 07:07
- */
-public interface CDIBaseFxComponent<T> {
-
-    public abstract Class<T> getPaneClass();
+public class SimpleLoginService implements LoginService {
+    @Override
+    public String login(String login, String password) {
+        if (password != null && password.trim().length() > 0) {
+            return String.format("%1$s logged in successfully", login);
+        }
+        return String.format("%1$s failed to login", login);
+    }
 }

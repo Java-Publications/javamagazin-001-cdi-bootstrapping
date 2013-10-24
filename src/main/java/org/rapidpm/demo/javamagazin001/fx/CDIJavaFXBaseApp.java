@@ -14,30 +14,22 @@
  *    limitations under the License.
  */
 
-package org.rapidpm.demo.javamagazin201403.fx;
+package org.rapidpm.demo.javamagazin001.fx;
 
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
 
-import javax.enterprise.inject.Produces;
-import javax.inject.Singleton;
-
-import javafx.application.Application;
+import javax.inject.Qualifier;
 
 /**
  * User: Sven Ruppert
- * Date: 09.07.13
- * Time: 11:55
+ * Date: 19.07.13
+ * Time: 10:55
  */
-
-@Singleton @CDIJavaFXBaseApp
-public class ApplicationParametersProvider {
-    private Application.Parameters parameters;
-
-    void setParameters(Application.Parameters p) {
-        this.parameters = p;
-    }
-
-    public @Produces @CDIJavaFXBaseApp
-    Application.Parameters getParameters() {
-        return this.parameters;
-    }
+@Qualifier
+@Retention(value = RetentionPolicy.RUNTIME)
+@Target({ElementType.METHOD, ElementType.FIELD, ElementType.PARAMETER, ElementType.TYPE})
+public @interface CDIJavaFXBaseApp {
 }

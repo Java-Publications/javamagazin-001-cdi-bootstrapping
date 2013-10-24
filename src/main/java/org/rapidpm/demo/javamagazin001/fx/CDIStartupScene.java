@@ -14,7 +14,7 @@
  *    limitations under the License.
  */
 
-package org.rapidpm.demo.javamagazin201403.fx;
+package org.rapidpm.demo.javamagazin001.fx;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

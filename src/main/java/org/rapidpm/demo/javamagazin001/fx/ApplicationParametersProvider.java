@@ -14,14 +14,30 @@
  *    limitations under the License.
  */
 
-package org.rapidpm.demo.javamagazin201403.fx.components;
+package org.rapidpm.demo.javamagazin001.fx;
+
+
+import javax.enterprise.inject.Produces;
+import javax.inject.Singleton;
+
+import javafx.application.Application;
 
 /**
  * User: Sven Ruppert
- * Date: 30.08.13
- * Time: 07:07
+ * Date: 09.07.13
+ * Time: 11:55
  */
-public interface CDIBaseFxComponent<T> {
 
-    public abstract Class<T> getPaneClass();
+@Singleton @CDIJavaFXBaseApp
+public class ApplicationParametersProvider {
+    private Application.Parameters parameters;
+
+    void setParameters(Application.Parameters p) {
+        this.parameters = p;
+    }
+
+    public @Produces @CDIJavaFXBaseApp
+    Application.Parameters getParameters() {
+        return this.parameters;
+    }
 }

@@ -14,22 +14,14 @@
  *    limitations under the License.
  */
 
-package org.rapidpm.demo.javamagazin201403.fx;
-
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
-
-import javax.inject.Qualifier;
+package org.rapidpm.demo.javamagazin001.fx.components;
 
 /**
  * User: Sven Ruppert
- * Date: 19.07.13
- * Time: 10:55
+ * Date: 30.08.13
+ * Time: 07:07
  */
-@Qualifier
-@Retention(value = RetentionPolicy.RUNTIME)
-@Target({ElementType.METHOD, ElementType.FIELD, ElementType.PARAMETER, ElementType.TYPE})
-public @interface CDIJavaFXBaseApp {
+public interface CDIBaseFxComponent<T> {
+
+    public abstract Class<T> getPaneClass();
 }

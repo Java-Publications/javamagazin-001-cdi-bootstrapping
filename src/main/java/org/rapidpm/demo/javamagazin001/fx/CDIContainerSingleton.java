@@ -14,7 +14,7 @@
  *    limitations under the License.
  */
 
-package org.rapidpm.demo.javamagazin201403.fx;
+package org.rapidpm.demo.javamagazin001.fx;
 
 import javax.enterprise.context.spi.CreationalContext;
 import javax.enterprise.event.Event;
@@ -26,6 +26,7 @@ import javax.enterprise.util.AnnotationLiteral;
 
 import org.jboss.weld.environment.se.Weld;
 import org.jboss.weld.environment.se.WeldContainer;
+
 
 /**
  * Created with IntelliJ IDEA.

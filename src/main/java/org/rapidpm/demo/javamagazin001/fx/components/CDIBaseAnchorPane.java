@@ -14,7 +14,7 @@
  *    limitations under the License.
  */
 
-package org.rapidpm.demo.javamagazin201403.fx.components;
+package org.rapidpm.demo.javamagazin001.fx.components;
 
 import java.io.IOException;
 
@@ -22,18 +22,23 @@ import javax.annotation.PostConstruct;
 import javax.inject.Inject;
 
 import javafx.fxml.FXMLLoader;
-import javafx.scene.layout.GridPane;
-import org.rapidpm.demo.javamagazin201403.fx.CDIJavaFxBaseController;
-import org.rapidpm.demo.javamagazin201403.fx.FXMLLoaderSingleton;
+import javafx.scene.layout.AnchorPane;
+import org.rapidpm.demo.javamagazin001.fx.CDIJavaFxBaseController;
+import org.rapidpm.demo.javamagazin001.fx.FXMLLoaderSingleton;
 
 /**
  * User: Sven Ruppert
  * Date: 30.08.13
- * Time: 07:06
+ * Time: 07:03
  */
-public abstract class CDIBaseGridPane<T, C extends CDIJavaFxBaseController> extends GridPane implements CDIBaseFxComponent<T> {
+public abstract class CDIBaseAnchorPane<T, C extends CDIJavaFxBaseController> extends AnchorPane implements CDIBaseFxComponent<T> {
 
-    public @Inject
+    public CDIBaseAnchorPane() {
+
+    }
+
+    public
+    @Inject
     FXMLLoaderSingleton fxmlLoaderSingleton;
     public C controller;
 

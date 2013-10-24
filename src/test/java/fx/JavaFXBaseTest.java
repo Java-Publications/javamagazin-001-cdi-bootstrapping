@@ -25,8 +25,8 @@ import javafx.stage.Stage;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import org.rapidpm.demo.javamagazin.fx.CDIStartupScene;
-import org.rapidpm.demo.javamagazin.fx.FXMLLoaderSingleton;
+import org.rapidpm.demo.javamagazin001.fx.CDIStartupScene;
+import org.rapidpm.demo.javamagazin001.fx.FXMLLoaderSingleton;
 
 /**
  * User: Sven Ruppert

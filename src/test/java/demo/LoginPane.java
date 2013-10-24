@@ -17,7 +17,7 @@
 package demo;
 
 
-import org.rapidpm.demo.javamagazin.fx.components.CDIBaseGridPane;
+import org.rapidpm.demo.javamagazin001.fx.components.CDIBaseGridPane;
 
 /**
  * User: Sven Ruppert

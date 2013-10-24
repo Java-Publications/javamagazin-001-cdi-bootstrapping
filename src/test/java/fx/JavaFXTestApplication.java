@@ -17,7 +17,7 @@
 package fx;
 
 import javafx.stage.Stage;
-import org.rapidpm.demo.javamagazin.fx.CDIJavaFXBaseApplication;
+import org.rapidpm.demo.javamagazin001.fx.CDIJavaFXBaseApplication;
 
 /**
  * User: Sven Ruppert

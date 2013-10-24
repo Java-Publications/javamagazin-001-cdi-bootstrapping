@@ -27,8 +27,8 @@ import javafx.fxml.FXML;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
-import org.rapidpm.demo.javamagazin.fx.CDIJavaFXBaseApp;
-import org.rapidpm.demo.javamagazin.fx.CDIJavaFxBaseController;
+import org.rapidpm.demo.javamagazin001.fx.CDIJavaFXBaseApp;
+import org.rapidpm.demo.javamagazin001.fx.CDIJavaFxBaseController;
 
 // Simple application controller that uses injected fields 
 // to delegate login process and to get default values from the command line using: --user=SomeUser
